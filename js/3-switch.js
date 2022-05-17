@@ -12,18 +12,23 @@ let estacion = prompt('Ingrese su estacion preferida: 1-Verano, 2-Otoño, 3-Invi
 //     document.write('Ingreso una opcion erronea');
 // }
 
+estacion = estacion.toUpperCase();
 switch (estacion)
 {
     case '1':
+    case 'VERANO':
         document.write('Sandwich de miga');
         break;
     case '2':
+    case 'OTOÑO':
         document.write('Locro');
         break;
     case '3':
+    case 'INVIERNO':
         document.write('Guiso');
         break;
     case '4':
+    case 'PRIMAVERA':
         document.write('Cerveza');
         break;
     default:
